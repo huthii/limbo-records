@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIMBO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="cabecalho">
+    <h1 class="logo">Limbo Records</h1>
+</header>
+
+<main>
+
+<section class="bio">
+    <h2>Descubra álbuns que marcaram gerações</h2>
+    <p>
+        Explore clássicos da música, conheça novas recomendações e mergulhe na história delas.
+    </p>
+    <button class="botao" id="explorar">Explorar</button>
+</section>
+
+<section class="albuns">
+    <h2>Álbuns em destaque</h2>
+
+<div class="lista-albuns">
+
+    <div class="album">
+        <img src="imagens/aphex-twin.jpg" alt="capa aphex twin">
+        <h3>Selected Ambient Works 85-92</h3>
+        <p>Aphex Twin - 1992</p>
+    </div>
+
+    <div class="album">
+        <img src="imagens/business-as-usual.jpg" alt="capa men at work">
+        <h3>Business as Usual</h3>
+        <p>Men at Work - 1981</p>
+    </div>
+
+    <div class="album">
+        <img src="imagens/jamiroquai.jpg" alt="capa jamiroquai">
+        <h3>Travelling Without Moving</h3>
+        <p>Jamiroquai - 1996</p>
+    </div>
+
+    <div class="album">
+        <img src="imagens/paranoid.jpg" alt="capa do black sabbath">
+        <h3>Paranoid</h3>
+        <p>Black Sabbath - 1970</p>
+    </div>
+</div>
+
+</section>
+
+<section class="sobre">
+    <h2>Sobre a Limbo Records</h2>
+    <p>
+        A Limbo Records é um espaço feito para descobrir novos gostos e falar dos álbuns que já viraram clássicos.
+    </p>
+</section>
+
+<section class="contato">
+    <h2>Entre em contato</h2>
+
+    <form class="formulario-contato">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" maxlength="9">
+        <p id="endereco"></p>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem"></textarea>
+
+        <button class="botao" type="submit">Enviar</button>
+    </form>
+</section>
+
+</main>
+
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
