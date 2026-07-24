@@ -6,6 +6,7 @@ botao.addEventListener("click", () => {
     });
 });
 
+
 const formulario = document.querySelector(".formulario-contato");
 
 formulario.addEventListener("submit", (event) => {
@@ -14,12 +15,18 @@ formulario.addEventListener("submit", (event) => {
     alert("Mensagem enviada! Obrigado por entrar em contato com a Limbo Records.");
 });
 
+
 const campocep = document.getElementById("cep");
 const endereco = document.getElementById("endereco");
 
 campocep.addEventListener("blur", () => {
 
     const cep = campocep.value.replace("-", "");
+
+if (cep.length !== 8) {
+    endereco.textContent = "CEP inválido.";
+    return;
+}
 
     fetch(`https://viacep.com.br/ws/${cep}/json/`)
         .then(resposta => resposta.json())
