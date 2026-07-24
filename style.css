@@ -53,21 +53,23 @@ body{
 
 .botao {
     background-color: #8A2BE2;
-    color: #FFFFFF;
+    color: black;
     border: none;
     padding: 12px 25px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 15px;
+    transition: 0.3s ease;
 }
 
 .botao:hover{
+    color: white;
     background-color: #6a1bbe;
-    transform: scale(1.1);
+    transform: translateY(-3px);
 }
 
 .albuns{
-    padding: 40px 20px;
+    padding: 30px 230px;
     text-align: center;
 }
 
@@ -112,4 +114,62 @@ body{
     margin-top: 40px;
     border-top: 1px solid #8A2BE2;
     border-bottom: 1px solid #8A2BE2;
+}
+
+.contato {
+    padding: 80px 10%;
+    color: #8A2BE2;
+}
+
+.contato h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: auto;
+    background: black;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #8A2BE2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    background: #111;
+    border: 1px solid #333;
+    color: white;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+#endereco {
+    color: #777;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.formulario-contato .botao {
+    margin-top: 20px;
+    background: #8a2be2;
+    color: black;
+    border: none;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formulario-contato .botao:hover {
+    background-color: #6a1bbe;
+    transform: translateY(-3px);
+    color: white
 }
