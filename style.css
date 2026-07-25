@@ -12,7 +12,7 @@ Preto forte: black
 }
 body{
     background-color: #0b0b0f;
-    color: #fff;
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -32,7 +32,7 @@ body{
 }
 
 .fotologo img{
-    width: 15%;
+    width: 150px;
 }
 
 .bio{
@@ -70,7 +70,7 @@ body{
 }
 
 .albuns{
-    padding: 30px 230px;
+    padding: 30px 20px;
     text-align: center;
 }
 
@@ -84,6 +84,8 @@ body{
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .album{
@@ -111,7 +113,7 @@ body{
 .vocesabia{
     color: #8a2be2;
     text-align: center;
-    padding: 80px 10%;
+    padding: 30px;
 }
 
 .vocesabia h1{
@@ -121,7 +123,7 @@ body{
 
 .vocesabia p{
     color: #b8b8b8;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .curiosidades{
@@ -218,9 +220,8 @@ body{
 }
 
 #endereco {
-    color: #777;
-    font-size: 0.85rem;
-    margin: 0;
+    color: #8a2be2;
+    font-size: 15px;
 }
 
 .formulario-contato .botao {
